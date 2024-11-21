@@ -3,7 +3,7 @@
   <!-- Secció header amb logo i navegadors -->
     <div class="logo-section">
       <img src="../assets/llunatics_logo.png" alt="Logo" class="logo" />
-      <router-link to="/" class="title">
+      <router-link :to="{ name: 'home'}" class="title">
         <strong>Llunàtics</strong>
       </router-link>
     </div>
@@ -93,7 +93,6 @@ header {
 }
 
 .main-nav a.router-link-exact-active {
-  color: #051326;
-  -webkit-text-stroke: 2px rgba(0, 0, 139, 1); /* Borde persistente en estado activo */
+  color: #60e3e5;
 }
 </style>

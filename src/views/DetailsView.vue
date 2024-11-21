@@ -19,9 +19,16 @@
         <button @click="savePost" class="edit-button">
           {{ isEditing ? 'Guardar' : 'Editar' }}
         </button>
-        <button @click="deletePost(post.id)" v-if="!isEditing && !isDeleting" class="delete-button">
+        <button @click="confirmDelete" v-if="!isEditing && !isDeleting" class="delete-button">
           Eliminar
         </button>
+        <div v-if="showConfirmationDialog" class="dialog-backdrop">
+          <div class="dialog">
+            <p>¿Estás seguro de que deseas eliminar este post?</p>
+            <button @click="deletePost(post.id)" class="confirm-button">Sí</button>
+            <button @click="showConfirmationDialog = false" class="cancel-button">No</button>
+          </div>
+        </div>
         <p v-if="isDeleting">Eliminando...</p>
         <p v-if="errorDelete">{{ errorDelete }}</p>
       </div>  
@@ -77,7 +84,8 @@ export default {
     const editedBody = ref('');
     const isDeleting = ref(false);
     const errorDelete = ref('');
-    const router = useRouter(); 
+    const router = useRouter();
+    const showConfirmationDialog = ref(false);
 
 
     const { post, error, loadPost } = getPost(props.id)  // Usamos el composable getPost con el ID del post
@@ -105,7 +113,12 @@ export default {
       await loadPost();   // Recarga el post para reflejar los cambios
     };
 
+    const confirmDelete = () => {
+      showConfirmationDialog.value = true;
+    };
+
     const deletePost = async (postId) => {
+      showConfirmationDialog.value = false; // Cierra el diálogo
       if (!post.value) {
         errorDelete.value = "No se puede eliminar el post, ya que no está disponible";
         return;
@@ -123,7 +136,7 @@ export default {
       }
     };
 
-    return { post, error, getImageUrl, savePost, isEditing, editedTitle, editedBody, isDeleting, errorDelete, deletePost }
+    return { post, error, getImageUrl, savePost, isEditing, editedTitle, editedBody, isDeleting, errorDelete, deletePost, confirmDelete, showConfirmationDialog}
   }
 }
 </script>
@@ -273,6 +286,56 @@ export default {
       background-color: #d32f2f;
       transform: scale(1.05);
     }
+
+    .dialog-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirm-button {
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 50px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 180px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  font-family: 'Fjalla One', sans-serif;
+  background-color: #ccc;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-button:hover {
+  background-color: #d32f2f;
+}
+
+.cancel-button:hover {
+  background-color: #bbb;
+}
 
     .stars {
     position: fixed;

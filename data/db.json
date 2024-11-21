@@ -1,15 +1,6 @@
 {
   "posts": [
     {
-      "id": "5",
-      "title": "La Força Universitària Darrere dels Llunàtics de Vilanova",
-      "body": "Els Llunàtics són una colla castellera universitària amb arrels profundes a la UPC de Vilanova. Des de la seva fundació el 2013, ofereixen a estudiants d'arreu del Garraf l'oportunitat d'implicar-se en una de les tradicions més emblemàtiques de Catalunya, tot creant vincles d'amistat.",
-      "image": "post5.jpg",
-      "tags": [
-        "historia"
-      ]
-    },
-    {
       "id": "6",
       "title": "Des del 2013, Fent Pinya amb els Llunàtics",
       "body": "La colla dels Llunàtics, fundada el 2013, és una de les colles més joves i vibrants de la cultura castellera. Formada íntegrament per estudiants, aquesta agrupació no només busca fer castells, sinó també enfortir les relacions entre universitaris a través d'aquesta tradició catalana.",
@@ -28,81 +19,12 @@
       ]
     },
     {
-      "id": "8",
-      "title": "Una Aventura Universitària en el Món dels Castells",
-      "body": "Els Llunàtics són una colla castellera formada per universitaris de la UPC de Vilanova que, des de 2013, ofereixen un espai d'integració i amistat a través dels castells. Amb membres de tot el Garraf, la colla representa la força i l'esperit de la cultura universitària.",
-      "image": "post8.jpg",
-      "tags": [
-        "historia"
-      ]
-    },
-    {
-      "id": "9",
-      "title": "Els Llunàtics: Joves, Castellers i Companys",
-      "body": "Des del febrer de 2013, els Llunàtics han portat la tradició dels castells a la vida universitària de Vilanova i la Geltrú. Aquesta colla única està formada per estudiants que, amb energia i dedicació, fan créixer la tradició i els llaços entre estudiants de diferents disciplines i regions.",
-      "image": "post9.jpg",
-      "tags": [
-        "historia"
-      ]
-    },
-    {
-      "id": "10",
-      "title": "Llunàtics: Castellers i la Cultura de la Unitat",
-      "body": "Amb els seus orígens a la UPC de Vilanova, els Llunàtics han aconseguit reunir a joves estudiants amb una passió comuna pels castells. Aquesta colla, fundada el 2013, ofereix un espai on la cultura, la cooperació i la solidaritat es fusionen per crear vincles duradors entre universitaris.",
-      "image": "post1.jpg",
-      "tags": [
-        "historia",
-        "cultura"
-      ]
-    },
-    {
-      "id": "11",
-      "title": "Llunàtics: La Força dels Estudiants en el Món dels Castells",
-      "body": "Des dels inicis el 2013, els Llunàtics han portat la tradició dels castells al cor de la comunitat estudiantil de Vilanova. Aquesta colla universitària es destaca per la seva dedicació i l'esperit jove que aporten a una de les tradicions més estimades de Catalunya.",
-      "image": "post2.jpg",
-      "tags": [
-        "tradició",
-        "universitat"
-      ]
-    },
-    {
-      "id": "12",
-      "title": "Un Reflex de Companyonia entre Estudiants",
-      "body": "Els Llunàtics no només representen la cultura castellera sinó també els valors de la unitat i el treball en equip entre estudiants de la UPC de Vilanova. Des de la seva fundació, han estat un exemple de com la tradició pot connectar a joves de diverses procedències.",
-      "image": "post3.jpg",
-      "tags": [
-        "companyonia",
-        "joventut"
-      ]
-    },
-    {
-      "id": "13",
-      "title": "Passió pels Castells a les Aules de la UPC",
-      "body": "La colla dels Llunàtics ha estat una peça clau en la difusió de la cultura castellera a Vilanova i la Geltrú. Format per estudiants de totes les disciplines, aquest grup ofereix molt més que castells: una comunitat unida per la passió i el respecte a les tradicions.",
-      "image": "post4.jpg",
-      "tags": [
-        "castells",
-        "comunitat"
-      ]
-    },
-    {
-      "id": "14",
-      "title": "Castellers Universitaris: Una Família Llunàtica",
-      "body": "Des de la seva fundació, els Llunàtics han creat una xarxa de suport entre estudiants que va més enllà de les aules. Amb un compromís amb la tradició i l'amistat, la colla segueix sent una família per als que s'uneixen, celebrant la unió de força i companyonia.",
-      "image": "post5.jpg",
-      "tags": [
-        "família",
-        "tradició"
-      ]
-    },
-    {
       "id": "15",
       "title": "Llunàtics de Vilanova: Castells que Uneixen Generacions",
       "body": "Amb arrels a la UPC de Vilanova, els Llunàtics no només apleguen estudiants, sinó també persones de diferents generacions unides per una passió comuna. La colla fomenta valors com la cooperació i el suport mutu, fent dels castells una eina de connexió social.",
-      "image": "post6.jpg",
+      "image": "post1.jpg",
       "tags": [
-        "unitat",
-        "comunitat"
+        "historia"
       ]
     },
     {
@@ -143,6 +65,15 @@
       "tags": [
         "amistat",
         "suport"
+      ]
+    },
+    {
+      "id": "20",
+      "title": "logo",
+      "body": "log",
+      "image": "logo.png",
+      "tags": [
+        "lo"
       ]
     }
   ],
