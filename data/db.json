@@ -1,60 +1,12 @@
 {
   "posts": [
     {
-      "id": "6",
-      "title": "Des del 2013, Fent Pinya amb els Llunàtics",
-      "body": "La colla dels Llunàtics, fundada el 2013, és una de les colles més joves i vibrants de la cultura castellera. Formada íntegrament per estudiants, aquesta agrupació no només busca fer castells, sinó també enfortir les relacions entre universitaris a través d'aquesta tradició catalana.",
-      "image": "post6.jpg",
-      "tags": [
-        "historia"
-      ]
-    },
-    {
-      "id": "7",
-      "title": "Llunàtics: Una Colla Que Fa Créixer Vincles Universitaris",
-      "body": "Amb la seva creació l'any 2013, els Llunàtics de la UPC a Vilanova van néixer amb l'objectiu d'apropar els castells a la comunitat universitària. Els seus membres, estudiants de Vilanova i d'altres regions, han trobat en la colla una forma de relacionar-se i compartir una afició autèntica.",
-      "image": "post7.jpg",
-      "tags": [
-        "historia"
-      ]
-    },
-    {
-      "id": "15",
-      "title": "Llunàtics de Vilanova: Castells que Uneixen Generacions",
-      "body": "Amb arrels a la UPC de Vilanova, els Llunàtics no només apleguen estudiants, sinó també persones de diferents generacions unides per una passió comuna. La colla fomenta valors com la cooperació i el suport mutu, fent dels castells una eina de connexió social.",
-      "image": "post1.jpg",
-      "tags": [
-        "historia"
-      ]
-    },
-    {
-      "id": "16",
-      "title": "Una Experiència Universitària més enllà de les Classes",
-      "body": "Ser part dels Llunàtics significa implicar-se en una experiència universitària completa, on la tradició es troba amb la vida estudiantil. Més que castellers, són un grup que construeix records i amistats per a tota la vida, unint universitaris de diversos llocs.",
-      "image": "post7.jpg",
-      "tags": [
-        "experiència",
-        "universitat"
-      ]
-    },
-    {
-      "id": "17",
-      "title": "Castells a l'Estil Universitari amb els Llunàtics",
-      "body": "Des de la seva creació el 2013, els Llunàtics han dut la cultura castellera al món universitari amb un estil únic. Els assajos i actuacions són espais d'aprenentatge i diversió on els estudiants es converteixen en castellers, compartint somnis i assolint reptes.",
-      "image": "post8.jpg",
-      "tags": [
-        "cultura",
-        "estil"
-      ]
-    },
-    {
       "id": "18",
       "title": "Els Llunàtics i la Importància de Fer Pinya",
       "body": "'Fer pinya' no és només una tècnica, sinó una filosofia que defineix la colla dels Llunàtics. Els estudiants de Vilanova troben en aquesta activitat un espai per recolzar-se els uns als altres, creant un ambient d'unió i complicitat únic dins del món universitari.",
-      "image": "post9.jpg",
+      "image": "post1.jpg",
       "tags": [
-        "pinya",
-        "filosofia"
+        "historia"
       ]
     },
     {
@@ -69,11 +21,29 @@
     },
     {
       "id": "20",
-      "title": "logo",
-      "body": "log",
-      "image": "logo.png",
+      "title": "PMU",
+      "body": "Info",
+      "image": "post1.jpg",
       "tags": [
-        "lo"
+        "historia"
+      ]
+    },
+    {
+      "id": "21",
+      "title": "PMUD_exemple",
+      "body": "Informació",
+      "image": "post9.jpg",
+      "tags": [
+        "junta"
+      ]
+    },
+    {
+      "id": "22",
+      "title": "PMUD",
+      "body": "info",
+      "image": "llunatics_group.png",
+      "tags": [
+        "junta"
       ]
     }
   ],

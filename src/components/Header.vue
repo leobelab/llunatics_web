@@ -24,7 +24,6 @@ export default {
 </script>
 
 <style>
-
 header {
   display: flex;
   justify-content: space-between;
@@ -49,11 +48,12 @@ header {
 }
 
 .logo {
-  height: 2.2vw; /* Ajustem la mida del logo en funció de l'amplada de la pantalla */
-  max-height: 50px; /* Per evitar que el logo es faci massa pequeño */
+  height: 2.2vw; /* Ajustamos la medida del logo en función del ancho de la pantalla */
+  max-height: 50px; /* Para evitar que el logo se haga demasiado pequeño */
   width: auto;
   margin-right: 1rem;
 }
+
 .title {
   font-size: 1.6vw; /* Ajustamos el tamaño del texto de forma proporcional al ancho de la pantalla */
   font-weight: 700;
@@ -95,4 +95,63 @@ header {
 .main-nav a.router-link-exact-active {
   color: #60e3e5;
 }
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Cambiamos la dirección del flex para apilar los elementos */
+    align-items: center; /* Centrar los elementos */
+    padding: 10px 2%; /* Menos espacio en los lados */
+  }
+
+  .logo-section {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px; /* Separar logo y título */
+  }
+
+  .logo {
+    height: 40px; /* Reducir el tamaño del logo */
+  }
+
+  .title {
+    font-size: 1.8rem; /* Ajustar tamaño del título para pantallas pequeñas */
+  }
+
+  .main-nav {
+    display: none; /* Ocultar la navegación en móvil */
+    flex-direction: column; /* Apilar los links en vez de estar en fila */
+    gap: 1rem;
+    text-align: center;
+  }
+
+  /* Mostrar el menú de navegación cuando se haga clic en un botón */
+  .main-nav.show {
+    display: flex;
+  }
+
+  /* Estilo para el botón de hamburguesa */
+  .hamburger {
+    display: block; /* Mostrar el botón de hamburguesa */
+    cursor: pointer;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+}
+
+/* Media query para tabletas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .logo {
+    height: 50px; /* Ajustar el tamaño del logo */
+  }
+
+  .title {
+    font-size: 1.2rem; /* Reducir el tamaño del título para tabletas */
+  }
+
+  .main-nav {
+    font-size: 1rem; /* Ajustar el tamaño de los enlaces */
+  }
+}
+
 </style>
